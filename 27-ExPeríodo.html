@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Saudações</h1>
+    <script>
+        const tempo = window.prompt("Qual é o período do dia neste momento?")
+
+        switch (tempo.toLowerCase())
+        {
+            case "noite":
+            case "Noite":
+            case "Manhã":
+            case "manhã": 
+            case "tarde":
+            case "Tarde":
+                window.alert("O período de agora é: "+ tempo)
+        }
+    </script>
+</body>
+</html>
