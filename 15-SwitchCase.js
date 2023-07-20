@@ -5,7 +5,7 @@ switch (fruta.toLowerCase())
     case "mamão":
     case "mamao":
         console.log("Quitandanda danda");
-        console.log("O preço do mamão é de R$ 10,00")
+        console.log("O preço do mamão é de R$ 10,00");
     break;
     case "banana":
         console.log("Quitandanda danda");
