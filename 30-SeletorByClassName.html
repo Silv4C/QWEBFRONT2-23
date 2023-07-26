@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor pelo nome da classe</title>
+</head>
+
+<body>
+    <h1 class="titulo">Senai Barueri</h1>
+    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis eaque aspernatur nam
+        ratione eveniet quaerat sed quidem repellat veritatis obcaecati est, quasi temporibus consequuntur. Iste maiores
+        reiciendis consequatur sequi?</p>
+    <button class="botao">Clique aqui!</button>
+    <button class="botao">Ou Clique aqui!</button>
+    
+    <script>
+        const tituloPrincipal = document.getElementsByClassName("titulo")[0]
+        tituloPrincipal.style.color = "purple"
+        tituloPrincipal.style.backgroundColor = "pink"
+        tituloPrincipal.innerText = "Barbie"
+
+        const spiderman = document.getElementsByClassName("descricao")[0]
+        spiderman.innerText = "Spiderman"
+        spiderman.style.backgroundColor = "red"
+        spiderman.style.color = "blue"
+
+        for(let i=0; i<=1; i++)
+        {
+        const botao = document.getElementsByClassName("botao")[i]
+        botao.style.backgroundColor = "green"
+        botao.style.color = "orange"
+        botao.style.padding = "10px 15px"
+        botao.style.borderRadius = "10px"
+        botao.style.border = "0px"
+    
+        }
+       
+    </script>
+</body>
+
+</html>

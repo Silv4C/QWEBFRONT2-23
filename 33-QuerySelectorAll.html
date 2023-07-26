@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector All</title>
+</head>
+<body>
+    <h1>Frutas - Query Selector All</h1>
+    <ul>
+        <li class="frutas">Abacaxi</li>
+        <li class="frutas">Abacate</li>
+        <li class="frutas">Banana</li>
+        <li class="frutas">Maçã</li>
+        <li class="frutas">Morango</li>
+    </ul>
+
+    <script>
+        let frutas = document.querySelectorAll(".frutas")
+        frutas.forEach((fruta) => {
+            fruta.style.fontFamily = "Comic Sans MS"
+            fruta.style.fontSize = "2em"
+            fruta.style.color = "darkBlue"
+        })
+    </script>
+</body>
+</html>

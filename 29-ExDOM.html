@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM - Document Object Model</h1>
+    <h3>Entendendo e trabalhando com DOM</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quidem nulla cum libero modi laboriosam cupiditate accusantium! Maiores temporibus laudantium adipisci, dolorum accusamus ea qui nobis nam odit libero ut?</p>
+    <div></div>
+    <script>
+        let tituloPrincipal = window.document.getElementsByTagName("h1")[0]
+        tituloPrincipal.innerText = "Alterando o título com DOM"
+        tituloPrincipal.style.backgroundColor = "rgb(0, 255, 0)"
+        tituloPrincipal.style.color = "rgb(255, 255, 0)"
+        tituloPrincipal.style.textShadow = "2px 2px 1px #000"
+
+        let subTitulo = document.getElementsByTagName("h3")[0]
+        subTitulo.style.color = "pink" 
+
+        let paragrafo = document.getElementsByTagName("p")[0]
+        paragrafo.style.color = "blue"
+
+        let div = document.getElementsByTagName("div")[0]
+        div.style.backgroundColor = "#444"
+        div.style.borderRadius = "300px"
+        div.style.width = "300px"
+        div.style.height = "300px"
+
+
+    </script>
+</body>
+</html>
