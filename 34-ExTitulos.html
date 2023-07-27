@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">Titulo principal da página</h1>
+    <h2 class="titulo">1º Subtítulo da página</h2>
+    <h3 class="titulo">2º Subtítulo da página</h3>
+    <h4 class="titulo">3º Subtítulo da página</h4>
+    <h5 class="titulo">4º Subtítulo da página</h5>
+    <h6 class="titulo">5º Subtítulo da página</h6>
+
+    <script>
+        const titulos = document.querySelectorAll(".titulo")
+        titulos.forEach((titulo) => {
+    
+            titulo.style.fontFamily = "Arial Black"
+            titulo.style.fontSize = "3em"
+            titulo.style.color = "greenyellow"
+            titulo.style.backgroundColor = "red"
+            
+        });
+    </script>
+</body>
+</html>

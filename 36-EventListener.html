@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener - Escutador de eventos</title>
+</head>
+<body>
+    <button id="btnAmarelo">Amarelo</button>
+    <button id="btnAzul">Azul</button>
+    <button id="btnVermelho">Vermelho</button>
+    <button id="btnVerde">Verde</button>
+    <button id="btnPadrao">Voltar ao padrão (branco)</button>
+    
+    <script>
+        const body = document.getElementsByTagName("body")[0]
+
+        const AmareloBotao = document.getElementById("btnAmarelo")
+        AmareloBotao.addEventListener("click", colorirAmarelo)
+
+        function colorirAmarelo()
+        {
+            body.style.backgroundColor = "yellow"
+        }
+
+        const AzulBotao = document.getElementById("btnAzul")
+        AzulBotao.addEventListener("click", colorirAzul)
+
+        function colorirAzul()
+        {
+            body.style.backgroundColor = "blue"
+        }
+
+        const VermelhoBotao = document.getElementById("btnVermelho")
+        VermelhoBotao.addEventListener("click", colorirVermelho)
+
+        function colorirVermelho()
+        {
+            body.style.backgroundColor = "red"
+        }
+
+        const VerdeBotao = document.getElementById("btnVerde")
+        VerdeBotao.addEventListener("click", colorirVerde)
+
+        
+        function colorirVerde()
+        {
+            body.style.backgroundColor = "green"
+        }
+
+        let corAtual 
+
+        const PadraoBotao = document.getElementById("btnPadrao")
+        PadraoBotao.addEventListener("click", colorirPadrão)
+        
+        function colorirPadrão()
+        {
+            corAtual = body.style.background
+            body.style.backgroundColor= "white"
+
+        }
+    </script>
+</html>

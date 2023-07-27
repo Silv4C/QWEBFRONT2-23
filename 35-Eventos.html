@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Js</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border: 15px green;
+            border-style: groove;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="colorirTitulo()">Trabalhando com eventos no JavaScript</h1>
+    <button class="btn_dark" onclick="colorirpágina()">Dark Theme</button>
+    <div onmouseenter="InserirNome()" onmouseout="removerNome()" id="meuNome"></div>
+    
+    <script>
+        function InserirNome()
+        {
+            meuNome.innerText = "Fernando de Carvalho Silva"
+        }
+
+        function removerNome()
+        {
+            meuNome.innerText = ""
+        }
+
+        function colorirTitulo()
+        {
+            const tituloPrincipal = document.querySelector("h1")
+        tituloPrincipal.style.color = "purple"
+        }
+       function colorirpágina()
+       {
+            const background = document.querySelector("body")
+            background.style.backgroundColor=  "#444"
+
+       }
+    </script>
+</body>
+</html>

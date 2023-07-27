@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia e Noite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <img src="./imagens/sol.png" id="sol" width="500px">
+
+    <script>
+        const body = document.querySelector("body")
+        const sol = document.getElementById("sol")
+        sol.addEventListener("mouseover", mostrarLua)
+        function mostrarLua(){
+            sol.setAttribute("src", "./imagens/lua.png")
+            body.style.backgroundColor = "#0a0b15"
+        }
+        sol.addEventListener("mouseout", mostrarSol)
+        function mostrarSol(){
+            sol.setAttribute("src", "./imagens/sol.png")
+            body.style.backgroundColor = "lightblue"
+        }
+    </script>
+</body>
+</html>
