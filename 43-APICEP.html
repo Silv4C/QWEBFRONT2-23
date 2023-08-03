@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pesquisaCEP{
+            background-color: #444;
+            color: #fff;
+            border:  1 px solid #444;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+            <label for="cep">CEP</label><br>
+            <input type="text" maxlength="8" name="cep" id="cep"><br><br>
+
+        
+            <label for="logradouro">Endereço</label><br>
+            <input type="text" id="logradouro" name=""><br>
+
+            <label for="bairro">Bairro</label><br>
+            <input type="text" id="bairro" name="bairro"><br>
+
+            <label for="localidade">Cidade</label><br>
+            <input type="text" id="localidade" name="localidade"><br>
+
+            <label for="uf">Estado</label><br>
+            <input type="text" id="uf" name="uf"><br>
+        </form>
+    </main>
+
+    <script>
+        cep.addEventListener("change", pesquisarEndereco);
+        
+        function pesquisarEndereco(){
+            let cepInformado = cep.value;
+            let urlAPI = "https://viacep.com.br/ws/" + cepInformado + "/json/";
+            
+            fetch(urlAPI).then(
+                (informacoes) => {
+                    informacoes.json().then(
+                        (enderecoViaCep) => {
+                            logradouro.value = enderecoViaCep.logradouro;
+                            bairro.value = enderecoViaCep.bairro;
+                            localidade.value = enderecoViaCep.localidade;
+                            uf.value = enderecoViaCep.uf
+                        }
+                    );
+                }
+            );
+            
+        }
+    </script>
+</body> <br> <br>
+</html>

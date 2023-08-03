@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Marcas</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .autoplay{
+            width: 30%; 
+        }
+        img{
+            width: 200px;
+            height: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="autoplay">
+        <img src="imagens/adidas.png">
+        <img src="imagens/fila.png">
+        <img src="imagens/jordan.png">
+        <img src="imagens/nike.jpg">
+        <img src="imagens/puma.jpg">
+        <img src="imagens/rebook.jpg">
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay:true,
+                autoplaySpeed: 1000
+               
+            });
+        });
+    </script>
+</body>
+
+</html>
