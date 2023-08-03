@@ -1,0 +1,124 @@
+{
+  "frutas": [
+    {
+      "codigo": 100253,
+      "nome": "Maçã Gala",
+      "quantidade": 10,
+      "preco": 2.5
+    },
+    {
+      "codigo": 100254,
+      "nome": "Banana Prata",
+      "quantidade": 15,
+      "preco": 1.8
+    },
+    {
+      "codigo": 100255,
+      "nome": "Laranja Valencia",
+      "quantidade": 20,
+      "preco": 1.0
+    },
+    {
+      "codigo": 100256,
+      "nome": "Pera Williams",
+      "quantidade": 12,
+      "preco": 2.2
+    },
+    {
+      "codigo": 100257,
+      "nome": "Uva Thompson",
+      "quantidade": 30,
+      "preco": 3.0
+    },
+    {
+      "codigo": 100258,
+      "nome": "Abacaxi Pérola",
+      "quantidade": 5,
+      "preco": 4.5
+    },
+    {
+      "codigo": 100259,
+      "nome": "Melancia Crimson Sweet",
+      "quantidade": 8,
+      "preco": 6.0
+    },
+    {
+      "codigo": 100260,
+      "nome": "Melão Orange Candy",
+      "quantidade": 7,
+      "preco": 5.5
+    },
+    {
+      "codigo": 100261,
+      "nome": "Manga Tommy Atkins",
+      "quantidade": 18,
+      "preco": 2.8
+    },
+    {
+      "codigo": 100262,
+      "nome": "Kiwi Hayward",
+      "quantidade": 25,
+      "preco": 3.5
+    },
+    {
+      "codigo": 100263,
+      "nome": "Cereja Maraschino",
+      "quantidade": 40,
+      "preco": 7.2
+    },
+    {
+      "codigo": 100264,
+      "nome": "Ameixa Amarela",
+      "quantidade": 14,
+      "preco": 2.0
+    },
+    {
+      "codigo": 100265,
+      "nome": "Morango Festival",
+      "quantidade": 22,
+      "preco": 4.0
+    },
+    {
+      "codigo": 100266,
+      "nome": "Abacate Hass",
+      "quantidade": 9,
+      "preco": 3.2
+    },
+    {
+      "codigo": 100267,
+      "nome": "Pêssego Amarelo",
+      "quantidade": 16,
+      "preco": 2.7
+    },
+    {
+      "codigo": 100268,
+      "nome": "Goiaba Vermelha",
+      "quantidade": 13,
+      "preco": 2.1
+    },
+    {
+      "codigo": 100269,
+      "nome": "Caju",
+      "quantidade": 11,
+      "preco": 2.3
+    },
+    {
+      "codigo": 100270,
+      "nome": "Jabuticaba",
+      "quantidade": 35,
+      "preco": 5.0
+    },
+    {
+      "codigo": 100271,
+      "nome": "Açaí",
+      "quantidade": 6,
+      "preco": 8.0
+    },
+    {
+      "codigo": 100272,
+      "nome": "Graviola",
+      "quantidade": 20,
+      "preco": 3.8
+    }
+  ]
+}

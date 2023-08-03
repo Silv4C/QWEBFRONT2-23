@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda Danda</title>
+    <link rel="stylesheet" href="CSS/estilo.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <section id="cart">
+            <h2>Carrinho de compras</h2>
+            <button class="clearCart" onclick="window.location.reload()">Limpar Carrinho</button>
+        </section>
+        <section id="productDetails">
+            <input type="text" id="idFruit" placeholder="Código da fruta">
+            <button id="searchFruit">Pesquisar fruta</button>
+
+            <div>
+                <table>
+                    <caption>Informações do Produto</caption>
+                    <tr>
+                        <th>Nome</th>
+                        <td id="fruitName">Banana</td>
+                    </tr>
+
+                    <tr>
+                        <th>Quantidade</th>
+                        <td id="fruitAmount">12</td>
+                    </tr>
+
+                    <tr>
+                        <th>Preço</th>
+                        <td id="fruitPrice">11,99</td>
+                    </tr>
+                </table>
+            </div>
+            <button id="addToCart">Adicionar ao carrinho</button>
+        </section>
+    </main>
+    <script src="Script/script.js">
+
+    </script>
+</body>
+
+</html>
