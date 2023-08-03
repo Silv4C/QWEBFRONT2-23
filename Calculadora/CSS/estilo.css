@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010020;
+}
+main form{
+    width: 70%;
+    background-color: #2c2984;
+    padding: 20px;
+    box-shadow: 1px 1px 1px #9a96ff;
+    border-radius: 10px;
+    display:  flex;
+    flex-direction:  column;
+}
+input, button{
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 0px 10px #fff;
+}
+button{
+    background-color: #9a96ff;
+    color: #fff;
+    border: 0px;
+    box-shadow: none;
+    cursor:  pointer;
+}
+button:hover{
+    box-shadow: 0px 0px 10px #9a96ff;
+}
+#btnNovaConta{
+    background-color: #000c43;
+}
